@@ -66,6 +66,8 @@ ln -sv ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sfv ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
+mkdir ~/.aws
+ln -sv ~/.dotfiles/aws/config ~/.aws/config
 
 #Install asdf
 brew install asdf
