@@ -39,7 +39,7 @@ git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 #Install powerline fonts
 #Check here for more details - https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/
 
-git clone https://github.com/powerline/fonts.git ~/powerline-fonts
+git clone https://github.com/powerline/fonts.git powerline-fonts
 cd powerline-fonts
 ./install.sh
 cd ../
