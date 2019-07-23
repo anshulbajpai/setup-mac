@@ -47,6 +47,9 @@ rm -rf powerline-fonts
 
 # Now install awesome-powerline-fonts from here - https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-3-install-awesome-powerline-fonts
 
+#Install  iTerm2 “color schemes” - Check here for more details - https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38
+
+
 #Install vimrc
 mkdir -p ~/.vim/colors
 curl https://raw.githubusercontent.com/zeis/vim-kolor/master/colors/kolor.vim --output ~/.vim/colors/kolor.vim
