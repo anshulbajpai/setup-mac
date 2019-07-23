@@ -1,5 +1,8 @@
 #!/bin/sh
 
+touch ~/.bash_untracked
+echo $'\n#!/bin/bash' > ~/.bash_untracked
+
 # Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
@@ -15,12 +18,6 @@ brew install \
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
 ssh-keygen -t rsa -b 4096 -C "anshul.bajpai@disneystreaming.com" -f ~/.ssh/disney -N ""
-
-eval "$(ssh-agent -s)"
-
-ssh-add -K ~/.ssh/github
-ssh-add -K ~/.ssh/bitbucket
-ssh-add -K ~/.ssh/disney
 
 #Install zsh
 brew install zsh zsh-completions
@@ -71,5 +68,5 @@ ln -sv ~/.dotfiles/aws/config ~/.aws/config
 
 #Install asdf
 brew install asdf
-echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.zshrc
-echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.zshrc
+echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
+echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.bash_untracked
