@@ -9,7 +9,7 @@ brew upgrade
 brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
-  unzip curl git vim
+  unzip curl git vim docker awscli
 
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
