@@ -14,6 +14,11 @@ brew install \
   libyaml readline libxslt libtool unixodbc \
   unzip curl git vim docker awscli
 
+#Install applications
+brew cask install \
+	evernote dropbox intellij-idea slack authy \
+	brave-browser iterm2 1password spectacle
+
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
