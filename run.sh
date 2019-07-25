@@ -12,7 +12,7 @@ brew upgrade
 brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
-  unzip curl git vim docker awscli
+  unzip curl git vim docker awscli gpg2
 
 #Install applications
 brew cask install \
