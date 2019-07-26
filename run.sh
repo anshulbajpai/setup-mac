@@ -12,7 +12,7 @@ brew upgrade
 brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
-  unzip curl git vim docker awscli gpg2
+  unzip curl git vim docker awscli gpg2 golang
 
 #Install applications
 brew cask install \
@@ -75,3 +75,4 @@ ln -sv ~/.dotfiles/aws/config ~/.aws/config
 brew install asdf
 echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
 echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.bash_untracked
+echo $'\nexport PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
