@@ -12,13 +12,13 @@ brew upgrade
 brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
-  unzip curl git vim docker docker-compose awscli \
-  gpg2 golang
+  unzip curl git vim awscli gpg2 golang
 
 #Install applications
 brew cask install \
 	evernote dropbox intellij-idea slack authy \
-	brave-browser iterm2 1password spectacle postman
+	brave-browser iterm2 1password spectacle postman \
+	docker	
 
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
