@@ -61,6 +61,7 @@ curl https://raw.githubusercontent.com/zeis/vim-kolor/master/colors/kolor.vim --
 rm -rf ~/.dotfiles
 git clone https://github.com/anshulbajpai/.dotfiles.git ~/.dotfiles
 ln -sv ~/.dotfiles/bash/.bash_aliases ~/.bash_aliases
+ln -sv ~/.dotfiles/bash/.bash_functions ~/.bash_functions
 ln -sv ~/.dotfiles/bash/.bash_env ~/.bash_env
 ln -sv ~/.dotfiles/bash/.bash_profile ~/.bash_profile
 ln -sv ~/.dotfiles/git/.gitconfig ~/.gitconfig
