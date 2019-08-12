@@ -19,7 +19,7 @@ brew install \
 brew cask install \
 	evernote dropbox intellij-idea slack authy \
 	brave-browser iterm2 1password spectacle postman \
-	docker	
+	docker google-cloud-sdk
 
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
