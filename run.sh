@@ -65,6 +65,7 @@ ln -sv ~/.dotfiles/bash/.bash_aliases ~/.bash_aliases
 ln -sv ~/.dotfiles/bash/.bash_functions ~/.bash_functions
 ln -sv ~/.dotfiles/bash/.bash_env ~/.bash_env
 ln -sv ~/.dotfiles/bash/.bash_profile ~/.bash_profile
+ln -sv ~/.dotfiles/bash/.scripts ~/.scripts
 ln -sv ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -sv ~/.dotfiles/ssh/config ~/.ssh/config
 ln -sv ~/.dotfiles/vim/.vimrc ~/.vimrc
@@ -73,6 +74,10 @@ ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
 mkdir ~/.aws
 ln -sv ~/.dotfiles/aws/config ~/.aws/config
+
+
+update_brew='@weekly /Users/anshulbajpai/.scripts/upgrade_brew.sh >/dev/null 2>&1'
+(crontab -l; echo "$update_brew" ) | crontab  -
 
 #Install asdf
 brew install asdf
