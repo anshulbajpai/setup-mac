@@ -72,12 +72,9 @@ ln -sv ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sfv ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
+
 mkdir ~/.aws
 ln -sv ~/.dotfiles/aws/config ~/.aws/config
-
-
-update_brew='@weekly /Users/anshulbajpai/.scripts/upgrade_brew.sh >/dev/null 2>&1'
-(crontab -l; echo "$update_brew" ) | crontab  -
 
 #Install asdf
 brew install asdf
