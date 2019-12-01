@@ -13,13 +13,13 @@ brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
   unzip curl git vim awscli gpg2 golang cfn-lint \
-  htop jq clamav
+  htop jq
 
 #Install applications
 brew cask install \
 	evernote dropbox intellij-idea slack authy \
 	brave-browser iterm2 1password spectacle postman \
-	docker google-cloud-sdk
+	docker
 
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
@@ -72,9 +72,6 @@ ln -sv ~/.dotfiles/vim/.vimrc ~/.vimrc
 ln -sfv ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
-
-mkdir ~/.aws
-ln -sv ~/.dotfiles/aws/config ~/.aws/config
 
 #Install asdf
 brew install asdf
