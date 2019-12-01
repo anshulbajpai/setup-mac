@@ -21,6 +21,10 @@ brew cask install \
 	brave-browser iterm2 1password spectacle postman \
 	docker
 
+#Install nerd-fonts
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
@@ -39,7 +43,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
-#Install powerline fonts
+#Install powerline fonts (The steps below will do automatically)
 #Check here for more details - https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/
 
 git clone https://github.com/powerline/fonts.git powerline-fonts
@@ -48,10 +52,8 @@ cd powerline-fonts
 cd ../
 rm -rf powerline-fonts
 
-# Now install awesome-powerline-fonts from here - https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-3-install-awesome-powerline-fonts
-
+#Configure nerd fonts in iterm2 preference -> profile -> text
 #Install  iTerm2 “color schemes” - Check here for more details - https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38
-
 
 #Install vimrc
 mkdir -p ~/.vim/colors
