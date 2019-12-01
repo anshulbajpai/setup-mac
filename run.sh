@@ -76,6 +76,12 @@ ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosugges
 
 #Install asdf
 brew install asdf
+asdf plugin-add java
+#Put the java version which you want to have
+asdf install java adopt-openjdk-13.0.1+9
+asdf global java adopt-openjdk-13.0.1+9
+
 echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
 echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.bash_untracked
 echo $'\nexport PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
+echo $'\n. ~/.asdf/plugins/java/set-java-home.sh' >> ~/.bash_untracked
