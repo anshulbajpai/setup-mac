@@ -24,7 +24,6 @@ brew cask install \
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
-ssh-keygen -t rsa -b 4096 -C "anshul.bajpai@disneystreaming.com" -f ~/.ssh/disney -N ""
 
 #Install zsh
 brew install zsh zsh-completions
