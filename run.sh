@@ -33,7 +33,7 @@ ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
 brew install zsh zsh-completions
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-ZSH_CUSTOM=/Users/anshulbajpai/.oh-my-zsh/custom
+ZSH_CUSTOM=${HOME}/.oh-my-zsh/custom
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
