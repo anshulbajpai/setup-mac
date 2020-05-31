@@ -14,7 +14,7 @@ brew install \
   libyaml readline libxslt libtool unixodbc \
   unzip curl git vim awscli gpg2 golang cfn-lint \
   htop jq colordiff asdf fzf gotop httpie \
-  zsh zsh-completions
+  zsh zsh-completions git-delta bat autojump
 
 #Install applications
 brew cask install \
@@ -75,7 +75,11 @@ ln -sfv ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
 
-echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
-echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.bash_untracked
-echo $'\nexport PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
-echo $'\n. $(brew --prefix)/opt/fzf/install' >> ~/.bash_untracked
+$(brew --prefix)/opt/fzf/install
+
+echo $'. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
+echo $'export PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
+
+git clone https://github.com/bigH/git-fuzzy.git tools/git-fuzzy
+echo $'export PATH=\"$(pwd)/tools/git-fuzzy/bin:\$PATH\"' >> ~/.bash_untracked
+echo $'[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh' >> ~/.bash_untracked
