@@ -13,13 +13,15 @@ brew install \
   coreutils automake autoconf openssl \
   libyaml readline libxslt libtool unixodbc \
   unzip curl git vim awscli gpg2 golang cfn-lint \
-  htop jq colordiff
+  htop jq colordiff asdf fzf gotop httpie \
+  zsh zsh-completions
 
 #Install applications
 brew cask install \
-	evernote dropbox intellij-idea slack authy \
-	brave-browser iterm2 1password spectacle postman \
-	docker
+	evernote dropbox intellij-idea-ce slack \
+	brave-browser iterm2 spectacle postman \
+	docker caffeine robo-3t virtualbox virtualbox-extension-pack \
+	vlc visual-studio-code
 
 #Install nerd-fonts
 brew tap homebrew/cask-fonts
@@ -29,8 +31,7 @@ brew cask install font-hack-nerd-font
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/bitbucket -N ""
 
-#Install zsh
-brew install zsh zsh-completions
+#Configure zsh
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ZSH_CUSTOM=${HOME}/.oh-my-zsh/custom
@@ -74,14 +75,7 @@ ln -sfv ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ln -sv ~/.dotfiles/zsh/custom/history.zsh $ZSH_CUSTOM/history.zsh
 ln -sv ~/.dotfiles/zsh/custom/zsh-autosuggestions.zsh $ZSH_CUSTOM/zsh-autosuggestions.zsh
 
-#Install asdf
-brew install asdf
-asdf plugin-add java
-#Put the java version which you want to have
-asdf install java adopt-openjdk-13.0.1+9
-asdf global java adopt-openjdk-13.0.1+9
-
 echo $'\n. $(brew --prefix asdf)/asdf.sh' >> ~/.bash_untracked
 echo $'\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash' >> ~/.bash_untracked
 echo $'\nexport PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
-echo $'\n. ~/.asdf/plugins/java/set-java-home.sh' >> ~/.bash_untracked
+echo $'\n. $(brew --prefix)/opt/fzf/install' >> ~/.bash_untracked
