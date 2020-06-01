@@ -15,7 +15,7 @@ brew install \
   unzip curl git vim awscli gpg2 golang cfn-lint \
   htop jq colordiff asdf fzf gotop httpie \
   zsh zsh-completions git-delta bat github/gh/gh \
-  terminal-notifier fd
+  terminal-notifier fd thefuck
 
 #Install applications
 brew cask install \
@@ -83,3 +83,4 @@ echo $'export PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
 
 git clone https://github.com/bigH/git-fuzzy.git tools/git-fuzzy
 echo $'export PATH=\"$(pwd)/tools/git-fuzzy/bin:\$PATH\"' >> ~/.bash_untracked
+echo $'eval $(thefuck --alias)' >> ~/.bash_untracked
