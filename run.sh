@@ -84,3 +84,4 @@ echo $'export PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
 git clone https://github.com/bigH/git-fuzzy.git tools/git-fuzzy
 echo $'export PATH=\"$(pwd)/tools/git-fuzzy/bin:\$PATH\"' >> ~/.bash_untracked
 echo $'eval $(thefuck --alias)' >> ~/.bash_untracked
+echo $'eval $(gh completion -s bash)' >> ~/.bash_untracked
