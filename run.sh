@@ -82,4 +82,3 @@ echo $'export PATH=$HOME/go/bin:$PATH' >> ~/.bash_untracked
 
 git clone https://github.com/bigH/git-fuzzy.git tools/git-fuzzy
 echo $'export PATH=\"$(pwd)/tools/git-fuzzy/bin:\$PATH\"' >> ~/.bash_untracked
-echo $'[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh' >> ~/.bash_untracked
