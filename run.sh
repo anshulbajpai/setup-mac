@@ -14,7 +14,7 @@ brew install \
   libyaml readline libxslt libtool unixodbc \
   unzip curl git vim awscli gpg2 golang cfn-lint \
   htop jq colordiff asdf fzf gotop httpie \
-  zsh zsh-completions git-delta bat
+  zsh zsh-completions git-delta bat github/gh/gh
 
 #Install applications
 brew cask install \
