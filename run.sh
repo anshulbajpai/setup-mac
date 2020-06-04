@@ -15,7 +15,7 @@ brew install \
   unzip curl git vim awscli gpg2 golang cfn-lint \
   htop jq colordiff asdf fzf gotop httpie \
   zsh zsh-completions git-delta bat github/gh/gh \
-  terminal-notifier fd thefuck
+  terminal-notifier fd thefuck tmux
 
 #Install applications
 brew cask install \
@@ -24,9 +24,17 @@ brew cask install \
 	docker caffeine robo-3t virtualbox virtualbox-extension-pack \
 	vlc visual-studio-code
 
+
+#Install speedtest
+brew tap teamookla/speedtest
+
 #Install nerd-fonts
 brew tap homebrew/cask-fonts
+
+brew update
+
 brew cask install font-hack-nerd-font
+brew install speedtest --force
 
 #Create ssh keys
 ssh-keygen -t rsa -b 4096 -C "bajpai.anshul@gmail.com" -f ~/.ssh/github -N ""
