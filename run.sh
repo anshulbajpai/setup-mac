@@ -15,14 +15,15 @@ brew install \
   unzip curl git vim awscli gpg2 golang cfn-lint \
   htop jq colordiff asdf fzf gotop httpie \
   zsh zsh-completions git-delta bat github/gh/gh \
-  terminal-notifier fd thefuck tmux
+  terminal-notifier fd thefuck tmux google-cloud-sdk \
+  ripgrep
 
 #Install applications
 brew cask install \
 	evernote dropbox intellij-idea-ce slack \
 	brave-browser iterm2 spectacle postman \
 	docker caffeine robo-3t virtualbox virtualbox-extension-pack \
-	vlc visual-studio-code
+	vlc visual-studio-code alfred authy
 
 
 #Install speedtest
